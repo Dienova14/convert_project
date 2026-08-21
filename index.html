@@ -41,14 +41,14 @@
         <label>
           <span>Struktur tabel</span>
           <select id="tableMode">
-            <option value="auto">Deteksi otomatis</option>
-            <option value="adaptive">Adaptive Detection (disarankan)</option>
+            <!-- <option value="auto">Deteksi otomatis</option> -->
+            <option value="adaptive">Adaptif Table</option>
             <option value="lattice">Ikuti garis border</option>
             <option value="stream">Ikuti celah spasi</option>
-            <option value="grouped">Price list bertingkat (No / Size / Spec / Price)</option>
+            <!-- <option value="grouped">Price list bertingkat (No / Size / Spec / Price)</option> -->
           </select>
         </label>
-        <p class="hint mode-hint">Gunakan <strong>Adaptive Detection</strong> untuk layout yang tidak konsisten. Jika PDF punya border, Adaptive akan memanfaatkan grid tersebut terlebih dahulu; jika tidak ada border, Adaptive mencari beberapa kemungkinan batas kolom lalu memilih struktur dengan skor terbaik.</p>
+        <!-- <p class="hint mode-hint">Gunakan <strong>Adaptive Detection</strong> untuk layout yang tidak konsisten. Jika PDF punya border, Adaptive akan memanfaatkan grid tersebut terlebih dahulu; jika tidak ada border, Adaptive mencari beberapa kemungkinan batas kolom lalu memilih struktur dengan skor terbaik.</p> -->
 
         <label>
           <span>Baris header</span>
@@ -62,8 +62,8 @@
         <label>
           <span>Sel yang digabung</span>
           <select id="mergeMode">
-            <option value="fill">Salin nilai ke bawah</option>
             <option value="keep">Biarkan kosong</option>
+            <option value="fill">Salin nilai ke bawah</option>
             <option value="merge">Gabungkan di Excel</option>
           </select>
         </label>
@@ -117,7 +117,7 @@
   </section>
 </main>
 
-<footer>PDF ke Excel · Adaptive v1.3</footer>
+<footer>PDF ke Excel · Beta v3.1</footer>
 
 <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
 <script type="module" src="assets/app.js"></script>
